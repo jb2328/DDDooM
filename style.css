@@ -1,0 +1,20 @@
+#gameCanvas {
+    background-color: black;
+    border: 2px solid #ffffff;
+  }
+  
+  .ray {
+    stroke: #ffffff;
+    stroke-width: 0.5px;
+  }
+  
+  #gameCanvas2D, #gameCanvas3D {
+    background-color: green;
+
+    position: absolute;
+    top: 0;
+  }
+  #gameCanvas3D {
+    left: 400px;
+  }
+  
