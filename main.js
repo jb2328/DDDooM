@@ -219,36 +219,8 @@ function renderRays() {
                     .attr('x2', x)
                     .attr('y2', y)
                     .attr('stroke', 'yellow')
-                    .attr('stroke-width', 1);
+                    .attr('stroke-width', 0.5);
 
-                // 3D Rendering
-                const screenHeight = window.innerHeight;
-                // const K=1.5;
-                const wallHeight = Math.min(screenHeight, screenHeight / (distance * Math.cos(rayAngle - player.dir)));
-                // const wallHeight = Math.min(screenHeight, (screenHeight * 4) / (distance * Math.cos(rayAngle - player.dir)));
-                // const wallHeight = K * Math.min(screenHeight, screenHeight / (distance * Math.cos(rayAngle - player.dir)));
-
-                const wallTop = (screenHeight - wallHeight) / 2;
-
-                // gameState.svg3D.append('rect')
-                //     .attr('x', i * sliceWidth)
-                //     .attr('y', wallTop)
-                //     .attr('width', sliceWidth)
-                //     .attr('height', wallHeight)
-                //     .attr('fill', 'red');
-
-
-                    // const cellX = Math.floor(x / gameConfig.cellSize);
-                    // const cellY = Math.floor(y / gameConfig.cellSize);
-                    // const cellKey = `${cellX},${cellY}`;
-                    // const color = gameState.visitedCells.has(cellKey) ? d3.interpolateViridis(distance / 100) : 'red';
-                    
-                    // gameState.svg3D.append('rect')
-                    //   .attr('x', i * sliceWidth)
-                    //   .attr('y', wallTop)
-                    //   .attr('width', sliceWidth)
-                    //   .attr('height', wallHeight)
-                    //   .attr('fill', color);
             }
         }
     }
